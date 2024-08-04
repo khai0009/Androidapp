@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "435223055438",
+    "project_id": "bank-c7502",
+    "storage_bucket": "bank-c7502.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435223055438:android:9b999855c4effa3a77c71f",
+        "android_client_info": {
+          "package_name": "com.example.anew"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS3DWmV8ZFfCAiO6YJDp4C40K3ZD9VgRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

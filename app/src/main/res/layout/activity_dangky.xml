@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:background="@drawable/background">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/logo"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp">
+
+        </ImageView>
+        <EditText
+            android:id="@+id/hoTen"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:hint="Họ tên">
+        </EditText>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="">
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="160dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@color/white"
+                android:paddingLeft="5dp"
+                android:hint="Số điện thoại">
+            </EditText>
+            <RadioGroup
+                android:id="@+id/giotinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                </TextView>
+                <RadioButton
+                    android:id="@+id/gioiTinhNam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:layout_marginRight="5dp">
+
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/gioiTinhNu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ">
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:hint="địa chỉ">
+        </EditText>
+        <EditText
+            android:id="@+id/cmnd"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="CMND/CCCD"
+            android:inputType="number"
+            android:maxLength="12"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"></EditText>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="emailAddress"
+            android:background="@color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"></EditText>
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:maxLength="16"
+            android:hint="Mật khẩu"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:textColorHint="@color/black">
+        </EditText>
+        <EditText
+            android:id="@+id/rePassword"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:enabled="false"
+            android:hint="Nhập lại mật khẩu"
+            android:background="@color/Gray"
+            android:paddingLeft="5dp"
+            android:textColorHint="@color/black">
+        </EditText>
+
+        <Button
+            android:id="@+id/tao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Đăng ký"
+            android:textSize="30dp"
+            android:enabled="false"
+            android:background="?android:attr/selectableItemBackground"
+            tools:ignore="TextSizeCheck"></Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

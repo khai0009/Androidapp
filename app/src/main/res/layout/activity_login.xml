@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="63dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/logo">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/hoTenLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/accountNumberLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="Tên Đăng nhập"
+            android:inputType="text"
+            android:maxLength="10"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"></EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/Gray"
+            android:enabled="false"
+            android:hint="Mật Khẩu"
+            android:inputType="text"
+            android:maxLength="16"
+            android:paddingLeft="5dp"
+            android:password="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"></EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/regsiter"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Đăng ký"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/otherAccount"
+                android:layout_width="123dp"
+                android:layout_height="83dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Đăng nhập tài khoản khác"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="100dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Đăng nhập"></Button>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fogotpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Quên mật Khẩu"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck"></Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

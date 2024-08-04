@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".TransferActivity">
+
+    <ImageView
+        android:id="@+id/backInfo2"
+        android:layout_width="62dp"
+        android:layout_height="38dp"
+        android:layout_gravity="left"
+        android:clickable="true"
+        app:srcCompat="@drawable/icons8_back_100" />
+
+    <LinearLayout
+        android:id="@+id/hh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:gravity="center|top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_conner"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:padding="15dp">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/accountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguồn tiền"
+                android:layout_marginBottom="10dp"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:id="@+id/accountNumberResc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/balanceResc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.289"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/accountLabel"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/balanceResc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="TextView"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toTopOf="@+id/accountNumberEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.289"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/accountNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Số tài khoản"
+            android:inputType="text"
+            android:maxLength="10"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/valueEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Số tiền"
+            android:inputType="number"
+            android:padding="5dp" />
+
+
+        <EditText
+            android:id="@+id/noiDungCK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Nội dung"
+            android:inputType="text"
+            android:padding="5dp" />
+
+
+        <Button
+            android:id="@+id/btnTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hh"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#000000"
+            android:gravity="center"
+            android:text="Xác nhận" />
+
+    </LinearLayout>
+
+</RelativeLayout>
